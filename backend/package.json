@@ -1,0 +1,28 @@
+{
+  "name": "ticketwebbsite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mattegbg/ticket-website.git"
+  },
+  "author": "Mathias Delic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mattegbg/ticket-website/issues"
+  },
+  "homepage": "https://github.com/Mattegbg/ticket-website#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "nedb-promise": "^2.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "keywords": [],
+  "description": ""
+}
