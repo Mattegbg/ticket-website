@@ -14,12 +14,15 @@ const { hashPassword, comparePassword } = require('./utils/bcrypt');
 app.use(express.static('../frontend'));
 app.use(express.json());
 
+saveMenu();
+
 //saveMenu(); // spara våra events i databasen när servern startas
 
 app.get('/api/ticket', async (request, response) => {
  const ticket = await getTicket();
  response.json(ticket);
 })
+
 
 
 app.post('/api/auth/create',  async (request, response) => {
@@ -56,8 +59,10 @@ app.post('/api/auth/create',  async (request, response) => {
 
 app.post('/api/createTicket', async (request, response) => {
   const event = request.body;
-  const eventId = event.id;
+  const eventId = event.eventId;
+  console.log(`event${eventId}`)
   const ticket = await createTicket(eventId); //await = vänta in svar från async funtion som ger OK att fortsätta. 
+  console.log(event);
   
   response.json(ticket)
 })

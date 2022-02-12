@@ -51,8 +51,10 @@ function saveAccount(account) {
 }
 
 //här lägger vi in eventet ovan i databasen
-function saveMenu(){
-    database.insert(menu);
+async function saveMenu(){
+    const db = await database.find({});
+    if (db == 0) database.insert(menu.menu);
+    //database.insert(menu);
 }
 
 function saveTicket(ticket){
@@ -62,6 +64,7 @@ function saveTicket(ticket){
 
 async function getMenu(){
     const menu = await database.find({type: 'event-menu'});
+    console.log(menu);
     return menu;
 }
 
