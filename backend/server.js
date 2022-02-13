@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 
 
 //hämta den exporterade funktionen från Operations i database mappen. 
-const { getAccountByUsername, saveAccount, saveMenu, getMenu, saveTicket, createTicket, getTicket } = require('./database/operations');
+const { getAccountByUsername, saveAccount, saveMenu, getMenu, saveTicket, createTicket, getTicket, getEvent } = require('./database/operations');
 
 //hämta/importera funktion (kryptera lösenord) från utils, bcrypt.js
 const { hashPassword, comparePassword } = require('./utils/bcrypt');
@@ -57,22 +57,61 @@ app.post('/api/auth/create',  async (request, response) => {
 
 })
 
-app.post('/api/createTicket', async (request, response) => {
-  const event = request.body;
-  const eventId = event.eventId;
-  console.log(`event${eventId}`)
-  const ticket = await createTicket(eventId); //await = vänta in svar från async funtion som ger OK att fortsätta. 
-  console.log(event);
+
+//hämtar ticket number från databasen och jämför med inskickat ticket för verifiering. 
+app.post('/api/verify', async (request, response) => {
+  const ticketNr = String(request.body.ticket); // exempel: {ticket: '1234' } ticket/biljett nummer
+  const tickets = await getTicket(); //hämtas från operation.js via databasen. tickets är alla våra tickets i databasen. 
+
+  console.log(ticketNr, 'ticket-number');
+
+  for(i = 0; i < tickets.length; i++ ){ 
+
+    if(tickets[i].ticket!=undefined){
+      const match = await comparePassword(ticketNr, tickets[i].ticket ) 
+    if(match == true){
+      response.json({success: true })
+      return;
+    }
+    }
+    
+   }
+
+  response.json({success: false })
+      
+
+});
+
+
+
+app.get('/api/createTicket/:id', async (request, response) => { // : = ändringsbar text / siffra. ta in information.
+  const id = parseInt(request.params.id)
+  console.log(id);
+  const event = await getEvent(id);
+
+  const ticket = await createTicket(id); //await = vänta in svar från async funtion som ger OK att fortsätta.
+
+  response.json({ticket: ticket, event: event})
   
-  response.json(ticket)
+  // const event = request.body;
+  // const eventId = event.eventId;
+  // console.log(`event${eventId}`)
+  // const ticket = await createTicket(eventId); //await = vänta in svar från async funtion som ger OK att fortsätta. 
+  // console.log(event);
+  
+  // response.json(ticket)
 })
+
+
 
 
 app.get('/api/getevent', async (request, response) => {
   const menu = await getMenu();
+  menu.sort((a, b) => a.id - b.id); 
   response.send(menu); 
 
 })
+
 
 
 //endpoint till loginsidan. 

@@ -63,8 +63,8 @@ function saveTicket(ticket){
 }
 
 async function getMenu(){
-    const menu = await database.find({type: 'event-menu'});
-    console.log(menu);
+    const menu = await database.find({
+        artist: {$exists: true}})
     return menu;
 }
 
@@ -72,14 +72,19 @@ async function createAdmin(){
     const account = {username: "admin", password: await hashPassword("admin1")}
     saveAccount(account)
 } 
-
+//createAdmin();
 
 //hämta ticket och skicka till server.js tex. 
 async function getTicket(){
     let ticket = await database.find({}) //hämtar allt i databasen.
-    console.log(ticket);
-    let lastThing = ticket[ticket.length -1]
-    return lastThing;
+    console.log('getting tickets');
+    return ticket;
+    
+}
+
+async function getEvent(id){
+   console.log(id); return await database.findOne({id:parseInt(id)})
+
 }
 
 
@@ -92,8 +97,11 @@ async function createTicket(id){
         return ticketNumber;  
      } 
 
+
+
+
 //exportera våra funktion så vi importera dom i server.js 
-module.exports = { getAccountByUsername, saveAccount, saveMenu, getMenu, saveTicket, createTicket, getTicket}
+module.exports = { getAccountByUsername, saveAccount, saveMenu, getMenu, saveTicket, createTicket, getTicket, getEvent}
 
 
 

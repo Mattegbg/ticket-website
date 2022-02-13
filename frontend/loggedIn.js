@@ -1,3 +1,7 @@
+const inputElem = document.querySelector('#number');
+const buttonElem = document.querySelector('#searchButton');
+
+
 // hämta hem server från backend
 async function getMenu() {
     const token = sessionStorage.getItem('token');
@@ -12,5 +16,31 @@ async function getMenu() {
 
     }
 
+    async function verify(){
+        const ticket = inputElem.value;
+        const token = sessionStorage.getItem('token');
+        let response = await fetch("/api/verify", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              ticket: ticket,
+            }),
+          });
+        const data = await response.json();
+            console.log(data);
+            if(data.success == true){
+                alert('Verified ticket!')
+            }
+            else{
+                alert('did not match ticket!')
+            }
+    }
 
- getMenu();
+    buttonElem.addEventListener('click', () => {
+        verify();
+    });
+
+
+ //getMenu();

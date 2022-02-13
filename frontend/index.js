@@ -20,19 +20,27 @@ const eventList = document.querySelector('#eventList');
              }
          }
 
-         async function createTicket(ticket) {  //här gör vi om "event" från rad 16 till "ticket" men det är samma sak.
-            const response = await fetch('http://localhost:5000/api/createTicket', {
-                method: 'POST',
-                body: JSON.stringify(ticket),
-                headers: {
-                'Content-Type': 'application/json'
-                }
-            });
-            const data = await response.json();
-                console.log(data);
-                if (data) {window.location.href = 'http://localhost:5000/ticket.html' }
-        
+
+         async function createTicket(event){
+
+              window.location.href = `http://localhost:5000/ticket.html?id=${event.id}` 
+
+
          }
+
+        //  async function createTicket(ticket) {  //här gör vi om "event" från rad 16 till "ticket" men det är samma sak.
+        //     const response = await fetch('http://localhost:5000/api/createTicket', {
+        //         method: 'POST',
+        //         body: JSON.stringify(ticket),
+        //         headers: {
+        //         'Content-Type': 'application/json'
+        //         }
+        //     });
+        //     const data = await response.json();
+        //         console.log(data);
+        //         if (data) {window.location.href = 'http://localhost:5000/ticket.html' }
+        
+        //  }
 
 
         //hämta menyn / eventlistan 
@@ -43,7 +51,7 @@ const eventList = document.querySelector('#eventList');
             const data = await response.json();
             console.log(data);
         if (data){
-            showMenu(data[0].menu)
+            showMenu(data)
         }
         }
 
