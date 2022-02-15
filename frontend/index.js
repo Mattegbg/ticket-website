@@ -10,16 +10,21 @@ const eventList = document.querySelector('#eventList');
                 let event = menu[i]
                 console.log(event);
                 let li = document.createElement("li"); //skapa en osynligt innan vi lägger till den i HTML se nedan.
+
+                li.classList.add('menu-item'); // Sätter en css-klass på min li-tagg som är definerad i css
                 
-                li.innerHTML = `<span>${event.artist}</span> <span>${event.price} </span> <span>${event.date} </span> <span>${event.time} </span> <span>${event.place} </span>`;
+                li.innerHTML = `<span class="artist">${event.artist}</span> <span class="price">${event.price} </span> <span class="date">${event.date} </span> <span class="time">${event.time} </span> <span class="place">${event.place} </span>`;
                 li.addEventListener("click", () => {  // skapar osynlig button
                     createTicket(event); // här skapar vi vår ticket
                 })
                 eventList.append(li); //skapar list i html i "UL"en. 
-
-             }
+                
+            }
+            
          }
 
+
+//<span id="event1"></span> // hur man skapar class till Li i JS ovan.
 
          async function createTicket(event){
 

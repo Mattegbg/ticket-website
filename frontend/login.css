@@ -1,0 +1,152 @@
+/* STAFF LOGINPAGE NEDAN */
+
+
+
+#backgroundLogin {
+    position: relative;
+    width: 375px;
+    height: 667px;
+
+    background: #F39440;
+    text-align: center;
+    
+}
+
+#Group {
+
+    position: absolute;
+    width: 70px;
+    height: 69px;
+    left: 152px;
+    top: 90px;
+
+}
+
+
+#staff {
+
+    position: absolute;
+    width: 181px;
+    height: 52px;
+    left: 97px;
+    top: 159px;
+
+}
+
+#loginText {
+
+    position: absolute;
+    width: 281px;
+    height: 35px;
+    left: 47px;
+    top: 198px;
+
+}
+
+
+#username-login {
+    position: absolute;
+    width: 310px;
+    height: 63px;
+    left: 32px;
+    top: 325px;
+    
+    border: 2px solid #231F42;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+#password-login {
+    position: absolute;
+    width: 310px;
+    height: 59px;
+    left: 32px;
+    top: 427px;
+
+    border: 2px solid #231F42;
+    box-sizing: border-box;
+    border-radius: 3px;
+    
+}
+
+#login-button {
+    position: absolute;
+    width: 310px;
+    height: 60px;
+    left: 32px;
+    top: 555px;
+    
+    background: #231F42;
+    border-radius: 0px 0px 3px 3px;
+    color: #ffffff;
+}
+
+
+/* LOGGED IN CSS NEDAN */
+
+#loggedInBackground {
+    position: relative;
+    width: 375px;
+    height: 667px;
+
+    background: #F39440;
+    text-align: center;
+
+}
+
+
+
+#number {
+
+    position: absolute;
+    width: 310px;
+    height: 70px;
+    left: 32px;
+    top: 310px;
+
+    border: 2px solid #231F42;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+}
+
+#searchButton {
+    position: absolute;
+    width: 310px;
+    height: 60px;
+    left: 32px;
+    top: 390px;
+
+    background: #231F42;
+    border-radius: 0px 0px 3px 3px;
+    color: #ffffff;
+}
+
+#staffText {
+    position: absolute;
+    width: 281px;
+    height: 35px;
+    left: 47px;
+    top: 198px;
+
+}
+
+#Group2 {
+
+    position: absolute;
+    width: 70px;
+    height: 69px;
+    left: 152px;
+    top: 80px;
+
+}
+
+#staffText2 {
+
+    position: absolute;
+    width: 380px;
+    height: 45px;
+    
+    top: 150px;
+
+}

@@ -1,3 +1,59 @@
+#ticketBackground {
+    position: absolute;
+    height: 667px;
+    width: 375px;
+    background-image: linear-gradient(rgb(248, 94, 189), #231f42);
+    text-align: center;
+    
+}
+
+#ticket {
+    position: relative;
+    background-color: #ffffff;
+    height: 367px;
+    width: 275px;
+    left: 50px;
+    top: 110px;
+}
+
+#text {
+    padding-top:50px;
+    box-shadow: black;
+
+}
+
+#barcode {
+
+    position: absolute;
+width: 200px;
+height: 40px;
+left: 32px;
+top: 314px;
+
+}
+
+#date {
+    position: relative;
+    align-content: left;
+}
+
+#price {
+    color: green;
+}
+
+
+
+/* nedan är event listan, ovan är vald biljett */
+
+
+.a {
+    height: 667px;
+    width: 375px;
+    background-color: #231F42;
+    text-align: center;
+
+}
+
 ul {
     list-style-type: none;
     color: #F56B9A;
@@ -11,4 +67,175 @@ li {
     margin-top:0.5rem;
     margin-bottom:0.5rem;
     color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
+/* css för menyn för mina events / biljetter */
+
+.menu-item {
+    color: #ffffff; /*För en vit färg på texten*/
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+
+  }
+
+  .date {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+      position: absolute;
+      left: 15px;
+      height: 30px;
+      padding-top: 6px;
+      padding-right: 6px;
+      padding-left: 6px;
+  }
+
+  /* .artist {
+
+  }
+
+
+  .price {
+
+    color: green;
+
+
+  }
+
+  .time {
+
+  }
+
+  .artist {
+      font-size: large;
+
+  }
+
+  .place {
+
+
+  } */
+
+
+
+ /* li:nth-child(1) .artist {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 170px;
+    left: 122px;
+  }
+  li:nth-child(2) .artist {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 262px;
+    left: 122px;
+  }
+  li:nth-child(3) .artist {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 354px;
+    left: 122px;
+  }
+
+--------------
+
+   li:nth-child(1) .price {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 400px;
+    left: 122px;
+  }
+  li:nth-child(2) .price {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 262px;
+    left: 122px;
+  }
+  li:nth-child(3) .price {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 354px;
+    left: 122px;
+  }
+
+---------------
+
+  li:nth-child(1) .date {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 183px;
+    left: 39px;
+  }
+  li:nth-child(2) .date {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 262px;
+    left: 122px;
+  }
+  li:nth-child(3) .date {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 354px;
+    left: 122px;
+  }
+
+  -----------------
+
+  li:nth-child(1) .time {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 170px;
+    left: 122px;
+  }
+  li:nth-child(2) .time {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 262px;
+    left: 122px;
+  }
+  li:nth-child(3) .time {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 354px;
+    left: 122px;
+  }
+
+  ----------------
+
+  li:nth-child(1) .place {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 170px;
+    left: 122px;
+  }
+  li:nth-child(2) .place {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 262px;
+    left: 122px;
+  }
+  li:nth-child(3) .place {
+    position: absolute;
+    width: 202px;
+    height: 30px;
+    top: 354px;
+    left: 122px;
+  }   */
