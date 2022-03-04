@@ -19,13 +19,13 @@ saveMenu();
 //saveMenu(); // spara våra events i databasen när servern startas
 
 app.get('/api/ticket', async (request, response) => {
- const ticket = await getTicket();
- response.json(ticket);
+  const ticket = await getTicket();
+  response.json(ticket);
 })
 
 
 
-app.post('/api/auth/create',  async (request, response) => {
+app.post('/api/auth/create', async (request, response) => {
   const credentials = request.body;
   //{username: 'ada', password: 'pwd123}
   const resObj = {
@@ -39,7 +39,7 @@ app.post('/api/auth/create',  async (request, response) => {
   const usernameExists = await getAccountByUsername(credentials.username);
 
   // Skapa user. Om den får tillbaka större än 0 är det namnet upptaget om ej se nedan.
-  if(usernameExists.length > 0) {
+  if (usernameExists.length > 0) {
     resObj.usernameExists = true;
     resObj.success = false;
   }
@@ -48,12 +48,12 @@ app.post('/api/auth/create',  async (request, response) => {
   if (resObj.usernameExists == false) {
     const hashedPassword = await hashPassword(credentials.password); //skicka in lösenordet du valt (credentials) tbx får du krypterat lösenord.
     credentials.password = hashedPassword; // ditt lösenord blir nu det krypterade lösenordet ist.
-    
+
     saveAccount(credentials);
-  
+
   }
-    
-    response.json(resObj);
+
+  response.json(resObj);
 
 })
 
@@ -65,20 +65,20 @@ app.post('/api/verify', async (request, response) => {
 
   console.log(ticketNr, 'ticket-number');
 
-  for(i = 0; i < tickets.length; i++ ){ 
+  for (i = 0; i < tickets.length; i++) {
 
-    if(tickets[i].ticket!=undefined){
-      const match = await comparePassword(ticketNr, tickets[i].ticket ) 
-    if(match == true){
-      response.json({success: true })
-      return;
+    if (tickets[i].ticket != undefined) {
+      const match = await comparePassword(ticketNr, tickets[i].ticket)
+      if (match == true) {
+        response.json({ success: true })
+        return;
+      }
     }
-    }
-    
-   }
 
-  response.json({success: false })
-      
+  }
+
+  response.json({ success: false })
+
 
 });
 
@@ -90,25 +90,50 @@ app.get('/api/createTicket/:id', async (request, response) => { // : = ändrings
   const event = await getEvent(id);
 
   const ticket = await createTicket(id); //await = vänta in svar från async funtion som ger OK att fortsätta.
+    ticket.used = false
 
-  response.json({ticket: ticket, event: event})
-  
+  response.json({ ticket: ticket, event: event })
+
   // const event = request.body;
   // const eventId = event.eventId;
   // console.log(`event${eventId}`)
   // const ticket = await createTicket(eventId); //await = vänta in svar från async funtion som ger OK att fortsätta. 
   // console.log(event);
-  
+
   // response.json(ticket)
 })
 
+//verifierar när man loggar in på loggedIn med JWT token se i loggedIn.html där jag hämtar den
+
+app.get('/api/loggedIn', async (request, response) => {
+  console.log('----/API/LOGGEDIN-----');
+  const token = request.headers.authorization.replace('Bearer ', '');
+
+  let resObj = {
+    loggedIn: false
+  }
+
+  try {
+    const data = jwt.verify(token, 'a1b1c1');
+
+    console.log(data);
+
+    if (data) {
+      resObj.loggedIn = true;
+    }
+  } catch (error) {
+    resObj.errorMessage = 'Token expired';
+  }
+
+  response.json(resObj);
+});
 
 
 
 app.get('/api/getevent', async (request, response) => {
   const menu = await getMenu();
-  menu.sort((a, b) => a.id - b.id); 
-  response.send(menu); 
+  menu.sort((a, b) => a.id - b.id);
+  response.send(menu);
 
 })
 
@@ -117,7 +142,7 @@ app.get('/api/getevent', async (request, response) => {
 //endpoint till loginsidan. 
 app.post('/api/auth/login', async (request, response) => {
   const credentials = request.body;
- // { username: 'ada', password: 'pwd123'}
+  // { username: 'ada', password: 'pwd123'}
 
   const resObj = {
     success: false,
@@ -138,14 +163,14 @@ app.post('/api/auth/login', async (request, response) => {
       resObj.success = true;
 
       //vår token blir krypterad med vårt användarnamn som kopplad token till en användare
-      
-      const token = jwt.sign({ username: account[0].username}, 'a1b1c1', {
+
+      const token = jwt.sign({ username: account[0].username }, 'a1b1c1', {
         expiresIn: 600 //token (jwt) går ut om 10 min / 600 sekunder (värdet skrivs ut i sekunder)
       });
 
 
-        
-        resObj.token = token; //skickar/lägger in vår token till response objekt (resObj) ovan
+
+      resObj.token = token; //skickar/lägger in vår token till response objekt (resObj) ovan
 
     }
   }
@@ -158,29 +183,29 @@ app.post('/api/auth/login', async (request, response) => {
 
 
 //kanske lägga till en till endpoint än bara event. 
-app.get('/api/event/menu', async (request, response) => { 
+app.get('/api/event/menu', async (request, response) => {
   const token = request.headers.authorization.replace('Bearer ', '');
-console.log(request);
+  console.log(request);
   const resObj = {
     success: false
-    
+
   }
 
   try {
     const data = jwt.verify(token, 'a1b1c1');
     // const eventMenu = await getMenu();
-    
+
 
     // resObj.menu = eventMenu;
     resObj.success = true;
-  } 
-  catch ( error) {
+  }
+  catch (error) {
     resObj.errorMessage = 'Token invalid';
   }
 
   response.json(resObj);
 
-}); 
+});
 
 
 
