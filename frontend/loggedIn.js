@@ -77,6 +77,8 @@ async function verify() {
             ticket: ticket,
         }),
     });
+
+    //verifiera ticket en gång och sen kan man ej verifiera den igen. 
     const data = await response.json();
     console.log(data, 'data');
 
