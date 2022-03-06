@@ -97,6 +97,8 @@ async function createTicket(id){
         return ticketNumber;  
      } 
 
+
+//detta skapar vi för att verifiera ticket en gång, exporterad till server.js     
 async function addVerified(ticket){
     database.update({ticket:ticket}, {$set: {'verified':true}})
 }     

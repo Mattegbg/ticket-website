@@ -65,6 +65,7 @@ app.post('/api/verify', async (request, response) => {
 
   console.log(ticketNr, 'ticket-number');
 
+  //verifiera ticket en gång och sen inte mer. 
   for (i = 0; i < tickets.length; i++) {
 
     if (tickets[i].ticket != undefined) {
