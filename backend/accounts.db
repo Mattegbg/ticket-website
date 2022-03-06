@@ -12,14 +12,18 @@
 {"ticket":"$2a$10$2/Nq04QOQBC7DwFd.Wd1k.nhaqVij/zSeqZDqlL9pJ6yy4bv49AJW","eventId":1,"_id":"4rMDs3VUZnWUC4np"}
 {"ticket":"$2a$10$3HY7JK2Sdq8tRuB5hRhIG.uytgCjEy6VoKL.8KhaTv70ZWC6Uh1DW","eventId":3,"_id":"4umjxMQ8s1hNPoTl"}
 {"ticket":"$2a$10$8FbKV64Wfscl4RlkuinjHeIT1xQS77I866DUNjirADYC0AW5INGZu","eventId":1,"_id":"5g9XOAmCwbo2xUMn"}
+{"ticket":"$2a$10$nhu2lf0vD2BwoXYfEFiRAuIuaqSiQEwmEp2Rtj8oY915D4T1KFqNa","eventId":2,"_id":"5qPpukm0RScQaseD"}
 {"ticket":"$2a$10$plK6f9RPiR96vjE5mMnw8OE87dlaSLGs2S3apwb06l9S/gekzj6k6","eventId":1,"_id":"68R28lINPXgnX1PN"}
+{"ticket":"$2a$10$5Fwou/9d.QbXc/0Z4bBcdOJcGkcaIKPnSmo.1442GbzyRMTztfrvO","eventId":2,"_id":"6AonLhAvpfycHJSQ","newTicket":{"ticket":"$2a$10$5Fwou/9d.QbXc/0Z4bBcdOJcGkcaIKPnSmo.1442GbzyRMTztfrvO","verified":true}}
 {"ticket":"$2a$10$uA8PETjlfNA/IVta4veNUeqO5OPV8hsdnVb6wLX2enzERMqCf93IS","eventId":1,"_id":"6CFBRylCFiD1DyqT"}
 {"ticket":"$2a$10$uWcyLY4Emvzp7JbabmdLR.nVW4XZ3psZnKy1p.StUmtDjwj8HtYgG","eventId":3,"_id":"6Jro9FB0qb3FJrIX"}
 {"ticket":"$2a$10$KB/zibK579iYdyVO2f4jLOeLrXBM6WkKeVDSzo9eMob/0xRDXtXsS","eventId":1,"_id":"6bLi8xVPGYg51sga"}
+{"ticket":"$2a$10$gkUfD8dsJDk8Lj3lluyBJeve81zetucUmrbjNDuHhRoS5MJ/PPj5O","eventId":1,"_id":"7jRMDWL5eQp8biZP"}
 {"ticket":"$2a$10$aNNC3rm0ViKVTkTQc3qDl.BpiE0RXX9vov6WtsqTAnMAFpCTdJY8O","eventId":1,"_id":"7xYL05o9nKfleGxo"}
 {"ticket":"$2a$10$hkR4sWxHOthUYm50G0sT3u05iBFpBVYg1uMrfXi2IuyU36TbV2vua","eventId":1,"_id":"88WIt2vEkj0bNCHu"}
 {"ticket":"$2a$10$7r1n1xNMKZnvjlTCqtu4L.quEH9sjQ0MH74b1B4YU5JvXk./Vndvy","eventId":1,"_id":"8CclM0FQzf7a385W"}
 {"ticket":"$2a$10$dIR4GH.psnv0HEG2eaHqT.8dsPILcJ1Ijj3fAD/qTVnq9VaVVp7Wa","eventId":1,"_id":"8TtMfTzSpm1KUKfv"}
+{"ticket":"$2a$10$l2CV0tk1vlStWNcdOj1/OeTOxLEYrKCnpqKDlLITEDat1CxK.bt2m","eventId":2,"_id":"8UvKNwbTXMtYv5cO","verified":true}
 {"ticket":"$2a$10$wJ3b5SImj0rlh51Gyo6Ka.VO7s31Qo6QyCPfNFZUJWfpDB81Ir22u","eventId":1,"_id":"8jbkqA5Robx3Ns2V"}
 {"ticket":"$2a$10$moRxfcF7r3qTw7xCiGsbquuVy.eTXxBu18RNyGwbmjkUNqiMAB.Nm","eventId":1,"_id":"9FfEH5EbihSdqK4i"}
 {"ticket":"$2a$10$EO/weTqEcswqsXJlB6nd8OtTiGNOwzE5Ehkh3xZyqsk36uDG.r8s6","eventId":3,"_id":"9YhCMcwZY5Mdtwu1"}
@@ -30,6 +34,7 @@
 {"ticket":"$2a$10$FGvvRgJ6SDLtQ9S5peoxN./SacEZTJvr0BJnWBog.6GoHa5KwrTMm","eventId":1,"_id":"BGJrM6qPaU0PyB4C"}
 {"ticket":"$2a$10$8DK7GNwz3neuCFeT/zkkMuytTXGy14vbJfrr.Sg9nWnqj0PE3dfGS","eventId":1,"_id":"BQLgJb7Qp4nvexBZ"}
 {"ticket":"$2a$10$tiuYOtL02QEs0yQvJ9ETcuF2hMjIj5x3CStwHbJ8cUbdtTybvArQu","eventId":1,"_id":"BpFXssBHMZKingZu"}
+{"ticket":"$2a$10$Ewgho9WKWjEFm561GdOTI.XGbKeZUDqYjTbN5X12EnnAFYJOL41SG","eventId":2,"_id":"C70dSQlGm3plSIWs","verified":true}
 {"ticket":"$2a$10$TD7tkagX27JI/JQfYfyAnOp98P9ydXl3vErt5Xl3WzXLdAHyHfkT6","eventId":3,"_id":"CCaif9xCl6E9ue1u"}
 {"ticket":"$2a$10$pc4F.Wx6gMGGIbXk/fuLA.4ELp7c0OoDFFlBwzunky19MBYjlw45q","eventId":1,"_id":"DDC3DtOsYqS6jpBi"}
 {"ticket":"$2a$10$kwMPk5NnoxYUIyPteSS3kuLEOT9x0mzI7MoyR3cJ1WhbLtnYhuB5.","eventId":3,"_id":"DWDT38py7g8tTusi"}
@@ -62,6 +67,7 @@
 {"ticket":"$2a$10$v1v7qoLZJ6JU9zC2pc56O.a1Yz8Ly9MZrtMnYk0ganwVlXALq6.8i","eventId":2,"_id":"MAHldfnmotadZAQc"}
 {"ticket":"$2a$10$uSFtVhp52v.lvMOBsKj3ouOFeI88J7q/oXfsXHJLDs17.M1TUTXxm","eventId":1,"_id":"MK1ON1ZZxpQSW8Ll"}
 {"ticket":"$2a$10$zXRk8EDKHiFMdE4Abo6rA.pvHTqMNrh.gBGhE4OqYnVOKseWu3w1S","eventId":1,"_id":"MeKNI7i24yNaVH7e"}
+{"ticket":"$2a$10$yY.2ecC1S.7l.ellLaGLdOZjcp8MbZhe3yDixByLNeRFi5E5fV76C","eventId":2,"_id":"Mf0acz7ADGY7Oa4K","verified":true}
 {"ticket":"$2a$10$kns.iK6JpBT5.uWyRtfr9OwhNhq7hO4mJO43se.DZ6gR3mpBUAmHO","eventId":1,"_id":"MmOExvyGfqQsmWIH"}
 {"ticket":"$2a$10$q3DCEzSjjVq48Uuchd.r1OiCVJrqBErB8QvSZuKo0oBTtpU4l0b7a","eventId":1,"_id":"NAJ4qmylVcvVpckh"}
 {"ticket":"$2a$10$1KPugvqYxraYRTGGIDTW7efBO6sP4NbfPV.JQvKvhKBgbXEpWmw3S","eventId":2,"_id":"NPiMiTBTapmAHfiN"}
@@ -77,6 +83,7 @@
 {"ticket":"$2a$10$dxnguAX26VXslsszjCn5NugtoImBWUcr24v/ze48n8hErTazUMyZ2","eventId":1,"_id":"Qtj854KCjkWRVeMj"}
 {"ticket":"$2a$10$ZuqXr41x1Q/6bnHWe7Df1.KZxZNwO5rtNEj1hbUKqll.7WgbXunE.","eventId":1,"_id":"R1fHDl9GWTDDPWk3"}
 {"ticket":"$2a$10$A6STYVUhLbJGMEKh8d2vROiXWlruYdQrZuYVS0MYy8BMysCl47Ovy","eventId":3,"_id":"R8XMKms7udmF1TGc"}
+{"ticket":"$2a$10$0nO3p5EcyBvL5kztzQYJIOjTUhwwPVPpG.28WCPxd11QYc0w.ezs2","eventId":2,"_id":"RXzKfvv7alKwTfPM"}
 {"ticket":"$2a$10$7FOk/2Fyjg6u6MRn8l6OGuB.jRPu9FCIxGE4UqlcDOjYM235yoe1G","eventId":1,"_id":"RjFoH75upBKQEHpk"}
 {"id":3,"artist":"AKON","date":"1 JAN","time":"18.00","price":"260 SEK","place":"PARTILLE ARENA","_id":"RnYDvpeyI7oYoBWO"}
 {"ticket":"$2a$10$fXhSZ2XVpm/9lwdjkVf2g.1Q3a2pa0jhLHmqQZvTo57CL7gOSFiIG","eventId":2,"_id":"SZ0rvt6YT19Zg8Dm"}
@@ -85,6 +92,9 @@
 {"ticket":"$2a$10$nItF585zKpj.yJzoo.oWZeHEmXJMDrnF00Q5MD0kZFq9IOvEIACvC","eventId":1,"_id":"TszGv5GYTozO9CQ7"}
 {"ticket":"$2a$10$OUjwxnzT.enLwDNuEt.Z.OJWuSbQWC1bpvfxdraC4dn1O4BY8x9G2","eventId":1,"_id":"Uf06YIEdYr0GfAjg"}
 {"ticket":"$2a$10$Mwk5QCKE5T3dIcphI7pNyOPVuz/98SWCL3e/uCvNoOoLcTxF4/flu","eventId":3,"_id":"UiBT7BvWc3VUIayi"}
+{"ticket":"$2a$10$vD6d1MiO4lNXrUhRvPTeYOtFM97XW429wby7S16ynp5YxiSszHc3a","eventId":2,"_id":"UoIiZ1bhfJZ7bppw"}
+{"ticket":"$2a$10$WPcHYsZwnHEdiOTjJSAtbuWf.msVOFxtf.6y9UQ9dGZi/pvD.jeZO","eventId":2,"_id":"V9boeynY6M0Sin6a"}
+{"ticket":"$2a$10$9T2jgzXX4NIioozy0hypR.amMNG8HgzcLZkyO7baz3kRrkO/nBe8m","eventId":3,"_id":"VoVudABbDUsiZcRX","verified":true}
 {"ticket":"$2a$10$BU0iZ.5ZjL0j1WFIP4qPwucuSZXLEZ7s9UFqeTzVe.PXZRhShRoTC","eventId":1,"_id":"X8NTKsHrWfO2HLGt"}
 {"ticket":"$2a$10$CnK/BEZnt/inCeMCmcZwleqf7C0XAofRylGuX2IvoVziO0tAOuZQa","eventId":1,"_id":"XX3bPz6Ctqn26Xpt"}
 {"ticket":"$2a$10$hekfy3O.KjEPTH/s1vau9un5eIW4lrPdHEQGM3.YmNf7I/pkTN8Em","eventId":1,"_id":"Xiyx7oWISx15y19o"}
@@ -148,6 +158,7 @@
 {"ticket":"$2a$10$uSMCLdvz.BKrzeiSwx6RPO0r7Ae/OrlgYtoW78jrgzbmk/D7vcX/6","eventId":1,"_id":"v366QUducj5U0ZJY"}
 {"id":2,"artist":"ABBA","date":"25 AUG","time":"21.00","price":"300 SEK","place":"HEDEN","_id":"v7b4oUJC9im0nNsG"}
 {"ticket":"$2a$10$QLsmEnt.a0mv8iyrNCVse.LN9OY4TokiIqeRTb/plmKO.J4GeR3.a","eventId":1,"_id":"vo2Da1XllHbhrMxP"}
+{"ticket":"$2a$10$3Nz/kLThjUSsovYaXT/upegu4w5FghMxJQ5mnDDMVa0wfjpgGf4m.","eventId":2,"_id":"wSiwe6VNhmyhNrDw"}
 {"ticket":"$2a$10$M5ItOwnSP2.IsUMGqkCr7OC4FWMTylfaqIBs7bQczK6uOjuz/JT5C","eventId":2,"_id":"wTrCCPL1OBj7HEGa"}
 {"ticket":"$2a$10$nlTFb9eqWKY7516HNV43V.cyhPaqTrEd04qy2pfpH8S3PkKzYA4vC","eventId":3,"_id":"wptwDg3l8nDOl6Fk"}
 {"ticket":"$2a$10$evSY8SUp.A0rF3G.RvQFZulnYGcQ9r.QEuqC.8X0guth9juUFqIay","eventId":1,"_id":"xKvG9klH661hzKiG"}
@@ -157,3 +168,6 @@
 {"ticket":"$2a$10$jDXWTyDyK/M5TnZmlTjM9.Tk.QPliwfdgOjX6K0bvDRGEo75RwAMi","eventId":1,"_id":"z2fn7CQ6zeseU6zE"}
 {"ticket":"$2a$10$An8pnO1Xwti0oM5tFaXLfOcN0Fxu0rVN4uPRwjLLohiSdZZNLTHue","eventId":3,"_id":"zVDd8Ynih1bOSdB2"}
 {"ticket":"$2a$10$LVqRDy31Y0v6qMBR/p0sP.eAOodBhuvoJcg/rCvrJzTr0J10NxRGS","eventId":1,"_id":"zkLhHXATqOFRjEBd"}
+{"ticket":"$2a$10$So5FbZQsQmiZNJNCJkE.hOjlqFuyrVV.k0OABUZ9xufGK9n7hMZRi","eventId":3,"_id":"ooGBQm5C0fhApi9J"}
+{"ticket":"$2a$10$BH5XmatMLVg06GW2zeOmxeHqdY99WcjvEi98w/Cm6Ss8v.qBRI0uO","eventId":3,"_id":"5jbAPaOmY3xUnpOl"}
+{"ticket":"$2a$10$BH5XmatMLVg06GW2zeOmxeHqdY99WcjvEi98w/Cm6Ss8v.qBRI0uO","eventId":3,"_id":"5jbAPaOmY3xUnpOl","verified":true}

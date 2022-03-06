@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 
 
 //hämta den exporterade funktionen från Operations i database mappen. 
-const { getAccountByUsername, saveAccount, saveMenu, getMenu, saveTicket, createTicket, getTicket, getEvent } = require('./database/operations');
+const { getAccountByUsername, saveAccount, saveMenu, getMenu, saveTicket, createTicket, getTicket, getEvent, addVerified } = require('./database/operations');
 
 //hämta/importera funktion (kryptera lösenord) från utils, bcrypt.js
 const { hashPassword, comparePassword } = require('./utils/bcrypt');
@@ -70,6 +70,9 @@ app.post('/api/verify', async (request, response) => {
     if (tickets[i].ticket != undefined) {
       const match = await comparePassword(ticketNr, tickets[i].ticket)
       if (match == true) {
+        console.log(tickets[i])
+        if(tickets[i].verified==true){response.json({success:false,verified:true}); return}
+        addVerified(tickets[i].ticket)
         response.json({ success: true })
         return;
       }

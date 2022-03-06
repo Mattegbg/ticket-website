@@ -82,12 +82,17 @@ async function verify() {
 
     console.log(data.used)
 
-    if (data.success == true && data.used == false) {
-     data.used = true;
+    if (data.success == true) {
+     
      alert('Verified ticket!')
     }
     else {
-        alert('did not match ticket!')
+        if(data.verified==true){
+            alert('ticket already verified!')
+        } else{
+            alert('did not match ticket!')
+        }
+        
     }
 }
 

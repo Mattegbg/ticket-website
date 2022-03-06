@@ -97,11 +97,15 @@ async function createTicket(id){
         return ticketNumber;  
      } 
 
+async function addVerified(ticket){
+    database.update({ticket:ticket}, {$set: {'verified':true}})
+}     
+
 
 
 
 //exportera våra funktion så vi importera dom i server.js 
-module.exports = { getAccountByUsername, saveAccount, saveMenu, getMenu, saveTicket, createTicket, getTicket, getEvent}
+module.exports = { getAccountByUsername, saveAccount, saveMenu, getMenu, saveTicket, createTicket, getTicket, getEvent, addVerified}
 
 
 
